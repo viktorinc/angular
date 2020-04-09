@@ -1,0 +1,10 @@
+<div class=row>
+<app-add-event></app-add-event>
+    <div class="col-md-5">
+        <app-events-list (eventSelected)="temp = $event"></app-events-list>
+    </div>
+    <app-events-details *ngIf="temp; else infoText" [eventDetail]="temp"></app-events-details>
+    <ng-template #infoText>
+        <p><span class="info-text">Please, select event!</span></p>
+    </ng-template>
+</div>

@@ -1,0 +1,9 @@
+<a href="#" class="list-group" (click)="onSelected()">
+    <div class="block">
+        <h4 class="list-group-heading">
+            {{myEvent.name}}
+            <i class="fa fa-times-circle" aria-hidden="true" (click)="deleteEvent()" title="Delete event"></i>
+        </h4>
+        <img class="img-fluid" [src]="myEvent.image" alt="">
+    </div>
+</a>

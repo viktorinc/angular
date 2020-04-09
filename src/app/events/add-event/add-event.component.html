@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col">
+        <h2 class="title">Add Event</h2>
+
+        <div class="form-group">
+            <label for="name" class="data-of-event">Event name: </label>
+            <input [(ngModel)]="MyName" type="text" class="form-control" title="Enter name of event">
+        </div>
+
+        <div class="form-group">
+            <label for="description" class="data-of-event">Event description: </label>
+            <input [(ngModel)]="MyDescription" type="text" class="form-control" title="Enter description of event">
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="data-of-event">Event image: </label>
+            <input [(ngModel)]="MyImage" type="url" class="form-control" title="Enter url of event's image">
+        </div>
+
+        <button class="btn" (click)="addEvent()" title="Add new event">Add new event</button>
+    </div>
+</div>
